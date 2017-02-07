@@ -24,7 +24,7 @@
 		<property name="configLocation" value="classpath:SqlMapConfig.xml"></property>
 	</bean>
 
-	<!---->
+	<!--获得dao类-->
 	<bean id="dao" class="org.mybatis.spring.mapper.MapperFactoryBean">
 		<property name="mapperInterface" value="com.zsw.dao.bbdao"></property>
 		<property name="sqlSessionFactory" ref="sqlSessionFactory"></property>
